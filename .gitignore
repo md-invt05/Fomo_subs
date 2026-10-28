@@ -1,0 +1,37 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+api_keys*.txt
+proxys_*.txt
+
+# Browser session, follow progress, logs and temporary files
+follow_data/
+*.log
+test_tmp_*
+tmp*/
+test.sol
+
+# Parser is maintained locally; this repository distributes the follower.
+.dockerignore
+Dockerfile
+compose.yaml
+fomo_discover.py
+fomo_service.py
+requirements.txt
+test_fomo_service.py
+
+# Generated parser output and database backups
+*.sqlite3
+*.sqlite3-*
+*.sqlite3-journal
+data/*
+!data/traders.sqlite3
+!data/all_profiles.csv
